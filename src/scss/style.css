@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -305,6 +307,29 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+:root {
+  /* Primary colors */
+  --dark-green: #323828;
+  --green: #63704D;
+  --white-green: #D2D7CB;
+  --pink: #DC9EEE;
+  --dark-pink: #C395D0;
+  /* Page backgrounds*/
+  --green-page-bg: var(--green);
+  --white-green-page-bg: var(--white-green);
+  /* Shadows */
+  --island-shadow: 0 50px 100 0 rgba(50, 50, 93, 0.25),
+                   0 30px 60px 0 rgba(0, 0, 0, 0.3),
+                   inset 0 -2 6 0 rgba(10, 37, 64, 0.35);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
