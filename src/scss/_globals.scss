@@ -1,6 +1,14 @@
 body{
+  width: 100%;
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
+  background-color: var(--green-page-bg);
+  overflow-x: hidden;
+}
+
+.logo{
+  width: 210px;
+  height: 29px;
 }

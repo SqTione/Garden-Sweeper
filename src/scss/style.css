@@ -7,6 +7,10 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+* {
+  box-sizing: border-box;
+}
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -326,10 +330,72 @@ template {
 }
 
 body {
+  width: 100%;
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
+  background-color: var(--green-page-bg);
+  overflow-x: hidden;
+}
+
+.logo {
+  width: 210px;
+  height: 29px;
+}
+
+.header {
+  width: 100vw;
+  margin-top: 40px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 9%;
+}
+.header__menu {
+  position: relative;
+  left: -5%;
+}
+.header__menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  column-gap: 30px;
+  list-style: none;
+}
+.header__menu-list:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 110%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: var(--pink);
+}
+.header__menu-item {
+  transition: transform 0.2s ease;
+}
+.header__menu-item:hover {
+  transform: scale(1.05);
+}
+.header__menu-link {
+  font-family: "Alegreya", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--pink);
+}
+.header__change-lang {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
